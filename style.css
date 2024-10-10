@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Mono", monospace;
+
+}
+.container{
+max-height: 280px;
+width: 320px;
+background-color: #fff;
+display: flex;
+flex-direction: column;
+border-radius: 1vh;
+padding: 3vh;
+}
+p{
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+
+    font-size: 0.8rem;
+}
+#qrText{
+height: 5vh;
+padding-left: 0.3rem;
+font-family: "Roboto Mono", monospace;
+}
+#generate{
+    height: 5vh;
+    background-color: rgb(21, 136, 181);
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.8rem;
+    font-family: "Roboto Mono", monospace;
+
+}
+#clear{
+    height: 5vh;
+    background-color: rgb(21, 136, 181);
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.8rem;
+    font-family: "Roboto Mono", monospace;
+}
+#qr{
+    display: flex;
+    justify-content: center;
+   
+}
+#qrImage{
+    width: 100px;
+    max-height: 100px;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+
+}
+.error{
+    animation:  shake 0.1s linear 10;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+
+    }
+    50%{
+        transform: translateX(2px);
+
+    }
+    100%{
+        transform: translateX(0);
+
+    }
+
+}
